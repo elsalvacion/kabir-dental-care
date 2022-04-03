@@ -1,4 +1,5 @@
 import React from "react";
+import Appointment from "../components/Appointment";
 import Header from "../components/Header";
 import Services from "../components/Services";
 import Showcase from "../components/Showcase";
@@ -9,6 +10,7 @@ const HomeScreen = () => {
       <Header />
       <Showcase />
       <Services />
+      <Appointment />
     </div>
   );
 };
