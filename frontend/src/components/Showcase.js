@@ -1,5 +1,7 @@
 import React from "react";
 import "./Showcase.css";
+import Zoom from "react-reveal/Zoom";
+
 const Showcase = () => {
   return (
     <div className="showcaseContainer">
@@ -11,9 +13,11 @@ const Showcase = () => {
             qualified doctors that will give you the smile your deserve. It is
             never too late to start.
           </p>
-          <button className="py-5 px-5 bg-pink-500 text-gray-100 rounded hover:bg-pink-700">
-            MAKE AN APPOINTMENT
-          </button>
+          <Zoom>
+            <button className="py-5 px-5 bg-pink-500 text-gray-100 rounded hover:bg-pink-700">
+              MAKE AN APPOINTMENT
+            </button>
+          </Zoom>
         </div>
         <div className="flex-1"></div>
       </div>

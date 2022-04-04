@@ -1,15 +1,18 @@
 import React from "react";
+import Jump from "react-reveal/Jump";
 
 const Service = ({ service }) => {
   return (
-    <div className="bg-white rounded-md shadow-md p-4 w-80 m-2 hover:bg-blue-200">
-      <div className="p-5 bg-pink-500 rounded-full mx-auto my-4 w-32 h-32">
-        <img
-          src={service.icon}
-          alt={service.header}
-          className="w-full h-full object-cover"
-        />
-      </div>
+    <div className="bg-white  rounded-md shadow-md p-4 w-80 m-2 hover:bg-blue-200">
+      <Jump>
+        <div className="p-5 bg-pink-500 rounded-full mx-auto my-4 w-32 h-32">
+          <img
+            src={service.icon}
+            alt={service.header}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </Jump>
       <h1 className="font-semibold text-center text-2xl mb-6">
         {service.header}
       </h1>
