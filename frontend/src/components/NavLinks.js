@@ -5,29 +5,29 @@ const NavLinks = () => {
   const links = [
     {
       title: "Home",
-      path: "/",
+      path: "#nav",
     },
     {
-      title: "About",
-      path: "/about",
+      title: "Doctors",
+      path: "#doctors",
     },
     {
       title: "Services",
-      path: "/services",
+      path: "#services",
     },
     {
       title: "Pricing",
-      path: "/pricing",
+      path: "#pricing",
     },
     {
       title: "Contact",
-      path: "/contact",
+      path: "#contact",
     },
   ];
   return (
-    <div className="bg-white flex justify-between items-center py-4 px-10">
+    <div className="bg-white flex flex-col lg:justify-between lg:flex-row items-center p-4 lg:px-10">
       {/* logo */}
-      <Link to="/" className="flex items-center">
+      <Link to="/" className="flex items-center mb-4 lg:mb-0">
         <div className="p-4 rounded-full bg-pink-500 hover:bg-pink-700">
           <FaTooth className="text-gray-100" fontSize={28} />
         </div>
@@ -35,15 +35,15 @@ const NavLinks = () => {
           KDC
         </h2>
       </Link>
-      <div className="flex items-center">
+      <div className="flex items-center flex-wrap justify-center">
         {links.map((link) => (
-          <Link
-            className="mx-2 py-2 px-5 bg-pink-500 text-gray-100 rounded hover:bg-pink-700"
+          <a
+            className="m-2 p-2 md:px-5 bg-pink-500 text-gray-100 rounded hover:bg-pink-700"
             key={link.title}
-            to={link.path}
+            href={link.path}
           >
             {link.title}
-          </Link>
+          </a>
         ))}
       </div>
     </div>

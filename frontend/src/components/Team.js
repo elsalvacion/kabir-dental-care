@@ -15,13 +15,13 @@ const Team = () => {
     },
   ];
   return (
-    <div className="bg-white py-10 ">
+    <div className="bg-white py-10" id="doctors">
       <h1 className="text-center mb-10 text-4xl font-semibold">
         Your <span className="font-thin">Doctors</span>
       </h1>
-      <div className="flex flex-wrap">
+      <div className="flex flex-col items-center md:flex-row">
         {/* left */}
-        <div className="flex-1 pl-12 text-center">
+        <div className="flex-1 md:pl-6 text-center mb-7 md:mb-0">
           <Zoom>
             <img
               src="/assets/img/main-doctor.jpg"
@@ -36,9 +36,9 @@ const Team = () => {
           <p>Consultant Dental Surgeon</p>
         </div>
         {/* right */}
-        <div className="flex-1 py-7 px-3 flex flex-wrap">
+        <div className="flex-1 py-7 px-3 flex justify-center flex-wrap">
           {teams.map((team) => (
-            <div className="flex-1 mb-5 text-center">
+            <div className="mb-5 text-center mx-3">
               <Zoom>
                 <img
                   src={team.image}

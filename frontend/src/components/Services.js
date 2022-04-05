@@ -35,8 +35,10 @@ const Services = () => {
     },
   ];
   return (
-    <div className="py-24 px-16">
-      <h1 className="text-4xl text-center mb-7">Our Services</h1>
+    <div className="p-5 my-5">
+      <h1 className="text-4xl text-center mb-7" id="services">
+        Our Services
+      </h1>
       <div className="flex items-stretch flex-wrap justify-center">
         {services.map((service) => (
           <Service key={service.header} service={service} />

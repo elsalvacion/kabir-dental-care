@@ -4,7 +4,7 @@ import AppointmentRight from "./AppointmentRight";
 
 const Appointment = () => {
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-col lg:flex-row" id="appointment">
       {/* left */}
       <AppointmentForm />
       {/* right */}

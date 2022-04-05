@@ -3,7 +3,7 @@ import Jump from "react-reveal/Jump";
 
 const Service = ({ service }) => {
   return (
-    <div className="bg-white  rounded-md shadow-md p-4 w-80 m-2 hover:bg-blue-200">
+    <div className="bg-white w-11/12  rounded-md shadow-md p-4 md:w-80 m-2 hover:bg-blue-200">
       <Jump>
         <div className="p-5 bg-pink-500 rounded-full mx-auto my-4 w-32 h-32">
           <img

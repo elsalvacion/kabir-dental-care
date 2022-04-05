@@ -2,7 +2,10 @@ import React from "react";
 
 const AppointmentForm = () => {
   return (
-    <div className="flex-1 bg-pink-400 pl-24 pt-24 text-gray-50">
+    <div
+      className="flex-1 bg-pink-400 p-4
+     lg:pl-24 py-20 text-gray-50"
+    >
       <h2 className="uppercase mb-12 text-3xl m-2">Make An Appointment</h2>
       <form>
         {/* full name */}
@@ -18,8 +21,8 @@ const AppointmentForm = () => {
           />
         </div>
 
-        {/* phone & date */}
-        <div className="flex mb-4">
+        {/*  date & time */}
+        <div className="flex flex-col lg:flex-row lg:mb-4">
           {/* APPOINTMENT DATE */}
           <div className="flex-1 p-2">
             <label className="block" htmlFor="appointment">
@@ -33,7 +36,7 @@ const AppointmentForm = () => {
             />
           </div>
 
-          {/* APPOINTMENT DATE */}
+          {/* APPOINTMENT TIME */}
           <div className="flex-1 p-2">
             <label className="block" htmlFor="appointmentTime">
               APPOINTMENT TIME

@@ -22,12 +22,12 @@ const AppointmentRight = () => {
     },
   ];
   return (
-    <div className="flex-1 py-20 px-16">
+    <div className="flex-1 px-5 py-20 lg:px-16 " id="pricing">
       <h2 className="text-4xl mb-7">We the best</h2>
       {steps.map((step) => (
         <div className="bg-white  flex items-stretch rounded-md ">
           {/* left */}
-          <div className="flex flex-col items-center px-12">
+          <div className="flex flex-col items-center px-4 lg:px-12">
             <div className="w-1 h-full bg-pink-500"></div>
             <div className="rounded-full p-4 w-12 h-12 text-xl font-semibold bg-pink-500 text-white flex justify-center items-center">
               <p className="text-center">{step.step}</p>
