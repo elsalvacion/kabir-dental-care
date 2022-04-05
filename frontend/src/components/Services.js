@@ -35,7 +35,7 @@ const Services = () => {
     },
   ];
   return (
-    <div className="p-5 my-5">
+    <div className="py-5 px-2 my-5 lg:p-16">
       <h1 className="text-4xl text-center mb-7" id="services">
         Our Services
       </h1>

@@ -4,7 +4,7 @@ import NavLinks from "./NavLinks";
 
 const Header = () => {
   return (
-    <div className="hidden md:block" id="nav">
+    <div className="hidden lg:block" id="nav">
       <NavLinks />
       <NavInfo />
     </div>

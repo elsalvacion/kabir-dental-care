@@ -1,19 +1,7 @@
 import React from "react";
 import { Zoom } from "react-reveal";
+import { teams } from "../constants/general";
 const Team = () => {
-  const teams = [
-    {
-      id: 1,
-      name: "Dr. Zahir",
-      image: "https://randomuser.me/api/portraits/men/85.jpg",
-    },
-
-    {
-      id: 3,
-      name: "Dr. Male",
-      image: "https://randomuser.me/api/portraits/men/78.jpg",
-    },
-  ];
   return (
     <div className="bg-white py-10" id="doctors">
       <h1 className="text-center mb-10 text-4xl font-semibold">
@@ -38,7 +26,7 @@ const Team = () => {
         {/* right */}
         <div className="flex-1 py-7 px-3 flex justify-center flex-wrap">
           {teams.map((team) => (
-            <div className="mb-5 text-center mx-3">
+            <div key={team.id} className="mb-5 text-center mx-3">
               <Zoom>
                 <img
                   src={team.image}

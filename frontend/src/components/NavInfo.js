@@ -27,10 +27,7 @@ const NavInfo = () => {
     },
   ];
   return (
-    <div
-      className="flex items-center flex-col flex-wrap md:flex-row p-3 justify-center m-5 md:p-10"
-      id="contact"
-    >
+    <div className="flex items-center flex-col flex-wrap md:flex-row p-3 justify-center m-5 md:p-10">
       {infos.map((info) => (
         <div
           className="flex-1 flex flex-col items-center md:flex-row text-center md:text-left mb-5 md:mb-0"

@@ -1,31 +1,15 @@
 import React from "react";
+import { steps } from "../constants/general";
 
 const AppointmentRight = () => {
-  const steps = [
-    {
-      step: 1,
-      heading: "Easy Booking",
-      subHeading:
-        "We have the best customer service. Our goal is your happiness, and just filling the form and arrive at leaset 15 minutes before your appointed time.",
-    },
-    {
-      step: 2,
-      heading: "Quality Service",
-      subHeading:
-        "Our doctors are well qualified  and most importantly they are the best there is for the job. We also have the standard equipments to make you say aahh.",
-    },
-    {
-      step: 3,
-      heading: "Best Price Guarantee",
-      subHeading:
-        "We offer the most affordable prices for our customers. And the best part is we allow installments for some dental procedures.",
-    },
-  ];
   return (
     <div className="flex-1 px-5 py-20 lg:px-16 " id="pricing">
       <h2 className="text-4xl mb-7">We the best</h2>
       {steps.map((step) => (
-        <div className="bg-white  flex items-stretch rounded-md ">
+        <div
+          key={step.step}
+          className="bg-white  flex items-stretch rounded-md "
+        >
           {/* left */}
           <div className="flex flex-col items-center px-4 lg:px-12">
             <div className="w-1 h-full bg-pink-500"></div>

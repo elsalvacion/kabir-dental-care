@@ -1,29 +1,8 @@
 import React from "react";
 import { FaTooth } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { links } from "../constants/general";
 const NavLinks = () => {
-  const links = [
-    {
-      title: "Home",
-      path: "#nav",
-    },
-    {
-      title: "Doctors",
-      path: "#doctors",
-    },
-    {
-      title: "Services",
-      path: "#services",
-    },
-    {
-      title: "Pricing",
-      path: "#pricing",
-    },
-    {
-      title: "Contact",
-      path: "#contact",
-    },
-  ];
   return (
     <div className="bg-white flex flex-col lg:justify-between lg:flex-row items-center p-4 lg:px-10">
       {/* logo */}

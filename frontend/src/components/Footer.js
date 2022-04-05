@@ -6,7 +6,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footerContainer">
-      <div className="footerOverlay lg:py-24 px-16 py-8 md:flex-col text-white">
+      <div className="footerOverlay lg:py-24 px-16 py-8 md:flex-col lg:flex-row text-white">
         {/* left */}
         <div className="md:w-80 mb-7 md:mb-0">
           <Link to="/" className="flex items-center mb-9">
