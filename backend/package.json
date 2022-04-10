@@ -17,6 +17,7 @@
     "express-validator": "^6.12.1",
     "helmet": "^4.6.0",
     "hpp": "^0.2.3",
+    "moment": "^2.29.2",
     "mysql": "^2.18.1",
     "xss-clean": "^0.1.1"
   },

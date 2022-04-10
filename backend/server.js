@@ -5,8 +5,9 @@ const xss = require("xss-clean");
 const hpp = require("hpp");
 
 require("dotenv").config();
-
 const app = express();
+
+const appointment = require("./routes/appointment");
 
 // static files
 app.use(express.static("public"));
@@ -19,6 +20,8 @@ app.use(hpp());
 // express body parser
 
 app.use(express.json());
+app.use("/appointment", appointment);
+app.use(express.static("public"));
 
 const PORT = process.env.PORT || 5000;
 // listen to a port

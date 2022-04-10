@@ -1,9 +1,9 @@
 import { createStore, applyMiddleware, combineReducers } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
-import { getGeneralReducer } from "./reducers/generalReducers";
+import { bookAppointmentReducer } from "./reducers/attentionReducer";
 const reducers = combineReducers({
-  getGeneral: getGeneralReducer,
+  bookAppointment: bookAppointmentReducer,
 });
 const middleware = [thunk];
 const initialState = {};
